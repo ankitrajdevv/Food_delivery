@@ -185,3 +185,8 @@ footer{
     color: white;
     padding: 9px 20px;
 }
+@media screen and (max-width:360px) {
+    #cont{
+        display: none;
+    }
+}
