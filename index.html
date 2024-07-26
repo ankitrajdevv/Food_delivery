@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <title>Online food</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <script src="1.js"defer></script>
 </head>
+
 <body>
     <nav id="navbar">
         <div id="logo">
@@ -18,16 +21,26 @@
             <li class="items"><a href="#services">Services</a></li>
             <li class="items"><a href="#client-section">About us</a></li>
             <li id="cont" class="items"><a href="#contact">Contact us</a></li>
+            <div class="search">
+                <input type="text" placeholder="search this website">
+            </div>
         </ul>
-    </nav>
+    </nav> 
     <section id="home">
         <h1 class="h-primary">Welcome to online Food</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi esse reiciendis voluptates tenetur </p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi esse </p>
-        <button id="btn">Order now</button>
+        <div class="para">
+            <p>An online food ordering system allows you to accept </p>
+            <br>
+            <p>and manage orders placed online for delivery or takeaway.</p>
+        </div>
+        <div class="wrap" id="btn2">
+            <div class="container4">
+                <div class="box2"><a href="./explore.html">Explore</a></div>
+            </div>
+        </div>
     </section>
     <section id="services-container">
-        <h1 class="h-primary center">Our services</h1>
+        <h1 class="h-primary3 center">Our services</h1>
         <div id="services">
             <div class="box">
                 <img src="image/burger.jpg" alt="food">
@@ -35,7 +48,8 @@
                     Food catering
                 </h2>
                 <p class="center">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quaerat alias, iure aut quas recusandae dolorem accusantium animi rem culpa deleniti quod in consequuntu.
+                    Looking for fresh, friendly and professional Catering for house parties in bangalore | We have
+                    curated a bunch of best Home Party Caterers
                 </p>
             </div>
             <div class="box">
@@ -44,49 +58,89 @@
                     Bulk ordering
                 </h2>
                 <p class="center">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quaerat alias, iure aut quas recusandae dolorem accusantium animi rem culpa deleniti quod in consequuntu.
+                    Multiple item Party Delivery at one go. Hassle-Free Experience. Pre Book your Order. Order different
+                    cuisines from multiple restaurants.
                 </p>
             </div>
             <div class="box">
                 <img src="image/dosa.jpg" alt="food">
                 <h2 class="h-secondary center">
-                    Food catering
+                    Tiffin-service
                 </h2>
                 <p class="center">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quaerat alias, iure aut quas recusandae dolorem accusantium animi rem culpa deleniti quod in consequuntur.
+                    We have curated the best tiffin services in Bangalore that will have you eating healthy, homemade,
+                    and pocket-friendly meals for lunch and dinner.
                 </p>
             </div>
         </div>
     </section>
-    <section id="client-section">
-        <h1 class="h-primary center">Our clients </h1>
+    <section id="client-section"> 
+         <h1 class="h-primary center">Our clients </h1>
         <div id="clients">
             <div class="client-item"><img src="image/client 1.png" alt="our-client"></div>
             <div class="client-item"><img src="image/client 2.png" alt="our-client"></div>
             <div class="client-item"><img src="image/client 3.png" alt="our-client"></div>
+            <div class="client-item"><img src="image/client 5.png" alt="our-client"></div>
+            <div class="client-item"><img src="image/client 4.png" alt="our-client"></div>
+            <div class="client-item"><img src="image/client 7.png" alt="our-client"></div>
+            <div class="client-item"><img src="image/client 6.webp" alt="our-client"></div>
         </div>
     </section>
     <section id="contact">
-        <h1 class="h-primary center">Contact us</h1>
-        <div id="contact-box">
-            <form action="">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
+        <div id="contactsize" >
+            <form action="#" class="form">
+                <h1 class="text-center">Contact us</h1>
+                 <!-- Progress bar -->
+                <div class="progressbar">
+                  <div class="progress" id="progress"></div>
+            
+                  <div class="progress-step progress-step-active" data-title="Name"></div>
+                  <div class="progress-step" data-title="Contact"></div>
+                  <div class="progress-step" data-title="Submit"></div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="mail" placeholder="E-mail">
+                <!-- Steps -->
+                <div class="form-step form-step-active">
+                  <div class="input-group">
+                    <label for="username">First name</label>
+                    <input type="text" name="username" id="username" placeholder="First-name" />
+                  </div>
+                  <div class="input-group">
+                    <label for="position">Last name</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Last-name" />
+                  </div>
+                  <div class="">
+                    <a href="#contact" class="btn btn-next width-50 ml-auto">Next</a>
+                  </div>
                 </div>
-                <div class="form-group">
-                    <label for="contact">Phone:</label>
-                    <input type="text" name="contact" id="phone" placeholder="Phone">
+                <div class="form-step">
+                  <div class="input-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" placeholder="Phone" />
+                  </div>
+                  <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Email" />
+                  </div>
+                  <div class="btns-group">
+                    <a href="#contact" class="btn btn-prev">Previous</a>
+                    <a href="#contact" class="btn btn-next">Next</a>
+                  </div>
                 </div>
-                <div class="form-group">
-                    <label  for="pin"class="pin">Pin-code:</label>
-                    <input type="text" name="pin" id="pincode" placeholder="Pin-code">
+                <div class="form-step">
+                    <div class="input-group">
+                        <label for="ID">Pin-code</label>
+                        <input type="number" name="ID" id="ID" placeholder="Pin-code" />
+                    </div>
+                    <div class="input-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" placeholder="Date Of Birth" />
+                  </div>
+                  <div class="btns-group">
+                    <a href="#contact" class="btn btn-prev">Previous</a>
+                    <a href="#contact" class="btn ">Submit</a>
+                  </div>
                 </div>
-            </form>
+              </form>
         </div>
     </section>
     <footer>
@@ -95,4 +149,5 @@
         </div>
     </footer>
 </body>
+
 </html>
